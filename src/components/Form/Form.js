@@ -19,7 +19,7 @@ export const Form = () => {
   return (
     <form className={css.contactForm} onSubmit={handleSubmit}>
       <label htmlFor='nameContact'>Name</label> 
-      <input className={css.input} id="nameContact" type="text" name="name" pattern="^[a-zA-Zа-яА-Я]*$" required placeholder="Name"></input>
+      <input className={css.input} id="nameContact" type="text" name="name"  required placeholder="Name"></input>
       <label htmlFor='numberContact'>Phone number</label> 
       <input className={css.input} id="numberContact" type="tel" name="phone" pattern="\+?\d{1,4}?[ .\\-\\s]?\(?\d{1,3}?\)?[ .\\-\\s]?\d{1,4}[ .\\-\\s]?\d{1,4}[ .\\-\\s]?\d{1,9}" required placeholder="Number"></input>
       <button type="submit">Add contact</button>
